@@ -70,8 +70,7 @@ class Calculator {
             })
         }
         if (decimalDigits != null) {
-            return `${integerDisplay}.
-      ${decimalDigits}`
+            return String(`${integerDisplay}.${String(decimalDigits).slice(0, 6)}`)
         } else {
             return integerDisplay
         }
